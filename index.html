@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="x-icon" href="giphy (1).webp" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <div class="content">
+        <h1>Snake Game</h1>
+      </div>
+      <div class="game-container">
+        <canvas id="gameCanvas" width="400" height="400"></canvas>
+        <div id="game-controls">
+          <div id="scoreboard">
+            <div style="padding-bottom: 10px"></div>
+            <b id="current-score" style="color: white">Score: 0 </b> <br />
+            <b id="highest-score" style="color: white">Highest Score: 0</b>
+          </div>
+          <button id="tips-button" class="game-btn">Tips</button>
+          <button id="pause-button" class="game-btn">Pause</button>
+          <button id="restart-button" class="game-btn">Restart</button>
+          <div class="mobile-controls">
+            <button class="mobile-ctrl" id="up-button">&uarr;</button>
+            <div class="flex-btn">
+              <button class="mobile-ctrl" id="left-button">&larr;</button>
+              <button class="mobile-ctrl" id="right-button">&rarr;</button>
+            </div>
+            <button class="mobile-ctrl" id="down-button">&darr;</button>
+          </div>
+        </div>
+      </div>
+      <div id="tips-popup" class="tips-popup">
+        <p>To <b>Start</b> press any arrow key</p>
+        <p>Move Right: &rarr;</p>
+        <p>Move Left: &larr;</p>
+        <p>Move Up: &uarr;</p>
+        <p>Move Down: &darr;</p>
+        <hr />
+        <p>Blue dot: adds <b>1</b> point</p>
+        <p>Rainbow dot: adds <b>2</b> points</p>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
